@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <title>Behind_You</title>
+    <style>
+        @font-face {
+            font-family: scared;
+            src: url(font/PantonRustHeavy.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: hand_write;
+            src: url(font/PantonRustScrSmBold.ttf) format('truetype');
+        }
+
+        .hand{
+            font-family: hand_write;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header{
+            background-image: url("image/darkrain.jpg");
+            width: 1440px;
+            height: 154px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header p{
+            color: #FF0000;
+            font-family: scared;
+
+            font-weight: 900;
+            font-size: 60px;
+            line-height: 75px;
+            text-align: center;
+        }
+
+        #nav_main_aside{
+            width: 1440px;
+            height: 782px;
+
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        nav{
+            width: 208px;
+            height: 782px;
+            background-color:black;
+            color: red;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav div{
+            width: 208px;
+
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        #nav_second{
+            margin-top: 155px;
+        }
+
+        #watch_out{
+            position: absolute;
+            width: 300px;
+            height: 61px;
+            left: 940px;
+            top: 852px;
+
+            font-size: 50px;
+            line-height: 59px;
+
+
+            color: #930000;
+        }
+
+        nav div p{
+            margin-left: 11px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        nav div ul{
+            padding-left: 0px;
+
+            margin: 0;
+            width: 208px;
+            height: 160px;
+            color: #D03D3D;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        nav div ul li{
+            padding-left: 35px;
+        }
+
+        nav div ul li:hover{
+            background-color:#BA0000;
+            transition: 1s;
+        }
+
+        .menu{
+            width: 208px;
+            height: 40px;
+            text-decoration: none;
+            color: red;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .menu:hover{
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+            transition: 1s;
+        }
+
+        main{
+            background-image: url("image/darkrain.jpg");
+            background-size: 1024px 782px;
+            width:1024px;
+            height:782px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        #main_second{
+            margin-top: 100px;
+        }
+
+        main section div{
+            color: #BA0000;
+            font-size: 30px;
+            margin: 33px 0 0 47px;
+        }
+
+        main section ul{
+            color: #CACACA;
+            width: 400px;
+        }
+
+        main section ul li{
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+
+        main section ul li:hover{
+            color: red;
+            transition: 2s;
+        }
+
+        .main{
+            text-decoration: none;
+            color: #CACACA;
+        }
+
+        .main:hover{
+            color: red;
+            transition: 2s;
+        }
+
+        aside{
+            width: 208px;
+            background-color:black;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        aside form{
+            background-color: black;
+            color: red;
+            width: 140px;
+            display: flex;
+            flex-direction: column;
+
+            margin: 34px 0px 0px 7px;
+        }
+
+        aside form label{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3px;
+        }
+
+        aside form label input{
+            height: 23px;
+            width: 100px;
+            border-radius: 5px;
+        }
+
+        aside div button{
+            height: 55px;
+            width: 44px;
+
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FF0000;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+
+            margin-left: 10px;
+            margin-top: 40px;
+            border: none;
+        }
+
+        #icon{
+            color: red;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 1240px;
+            top: 493px;
+        }
+
+        #search{
+            position: absolute;
+            width: 163px;
+            height: 29px;
+            left: 1257px;
+            top: 488px;
+
+            border-radius: 10px 7px 7px 10px;
+            margin-left: 7px;
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FF0000;
+
+            border: 1px solid black;
+            box-shadow: gray 1px 1px;
+        }
+
+        aside div div{
+            width: 200px;
+            display: flex;
+            margin-top: 5px;
+            justify-content: flex-end;
+        }
+
+        aside div div a{
+            color: red;
+            background: black;
+            text-decoration: underline;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        aside div{
+            height: 372px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        #advertise{
+            height: 382px;
+
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #000000;
+        }
+
+        footer{
+            position: absolute;
+            width: 1440px;
+            height: 89px;
+            top: 935px;
+
+            background-color: black;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        footer div{
+            color: white;
+            margin: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>BEHIND YOU</p>
+    </header>
+    <div id="nav_main_aside">
+        <nav>
+            <div>
+                <p class="hand">Scared Story</p>
+                <ul>
+                    <li><a href="" class="menu">도시 괴담</a></li>
+                    <li><a href="" class="menu">인터넷 괴담</a></li>
+                    <li><a href="" class="menu">귀신 이야기</a></li>
+                    <li><a href="" class="menu">요괴 이야기</a></li>
+                </ul>
+            </div>
+
+            <div id = "nav_second">
+                <p class="hand">BOARD Anithing</p>
+                <ul>
+                    <li><a href="" class="menu">자유 게시판</a></li>
+                    <li><a href="" class="menu">괴담 게시판</a></li>
+                    <li><a href="" class="menu">이야기 후기</a></li>
+                    <li><a href="" class="menu">?????????</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <div class="hand">Today's Story</div>
+                <ul>
+                    <li><a href="" class="main">오늘의 첫번째 이야기</a></li>
+                    <li><a href="" class="main">두번째 이야기는 너무너무 무서운 이야기</a></li>
+                    <li><a href="" class="main">세번째는 뭐라뭐라뭐라뭐라라야</a></li>
+                    <li><a href="" class="main">지금 네 뒤에 귀신이 보여</a></li>
+                </ul>
+            </section>
+            <section id="main_second">
+                <div class="hand">Popular Story</div>
+                <ul>
+                    <li><a href="" class="main">인기많은 무서운 이야기는 여기에 올림</a></li>
+                    <li><a href="" class="main">두번째 이야기는 너무너무 무서운 이야기</a></li>
+                    <li><a href="" class="main">아무 이야기 쏼라쏼라쏼라 뒤를 조심해!!</a></li>
+                    <li><a href="" class="main">나는 네가 지난 여름에 무엇을 했는지 알고있다..</a></li>
+                </ul>
+            </section>
+            <div id="watch_out">Watch out!</div>
+        </main>
+        <aside>
+            <div>
+                <form>
+                    <label id="ID">ID <input type="text" value=""></label>
+                    <label id="PW">PW <input type="password"value=""></label>
+                </form>
+                <button>LogIn</button>
+                <div>
+                    <a href="">아이디 찾기</a>
+                    <a href="">비밀번호 찾기</a>
+                </div>
+                <span id="icon"><i class="fas fa-search"></i></span>
+                <input id="search" type="text" value="">
+            </div>
+            <a  id="advertise" href="https://google.co.kr" target="_blank">
+                AD
+            </a>
+        </aside>
+    </div>
+
+    <footer>
+        <div>copyright by HYUNMIN</div>
+    </footer>
+</body>
+</html>

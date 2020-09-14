@@ -15,8 +15,18 @@
             src: url(font/PantonRustScrSmBold.ttf) format('truetype');
         }
 
+        @font-face {
+            font-family: scared_m;
+            src: url(font/PantonHeavyMac.otf) format('truetype');
+        }
+
+        @font-face {
+            font-family: hand_write_m;
+            src: url(font/PantonBoldMac.otf) format('truetype');
+        }
+
         .hand{
-            font-family: hand_write;
+            font-family: hand_write, hand_write_m;
         }
 
         body {
@@ -37,7 +47,7 @@
 
         header p{
             color: #FF0000;
-            font-family: scared;
+            font-family: scared, scared_m;
 
             font-weight: 900;
             font-size: 60px;
@@ -87,12 +97,11 @@
             position: absolute;
             width: 300px;
             height: 61px;
-            left: 940px;
+            left: 1160px;
             top: 852px;
 
             font-size: 50px;
             line-height: 59px;
-
 
             color: #930000;
         }

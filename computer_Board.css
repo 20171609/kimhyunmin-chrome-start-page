@@ -1,0 +1,299 @@
+@font-face {
+    font-family: scared;
+    src: url(font/PantonRustHeavy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: hand_write;
+    src: url(font/PantonRustScrSmBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: scared_m;
+    src: url(font/PantonHeavyMac.otf) format('truetype');
+}
+
+@font-face {
+    font-family: hand_write_m;
+    src: url(font/PantonBoldMac.otf) format('truetype');
+}
+
+body {
+    margin: 0;
+    padding-left: 220px;
+    background-color:black;
+}
+
+.hand{
+    font-family: hand_write, hand_write_m;
+}
+
+header{
+    background-image: url("image/darkrain.jpg");
+    width: 1440px;
+    height: 154px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header p{
+    color: #FF0000;
+    font-family: scared, scared_m;
+
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+
+header p a{
+    text-decoration: none;
+    color: #FF0000;
+}
+
+#nav_main_aside{
+    width: 1440px;
+    height: 782px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav{
+    width: 208px;
+    height: 782px;
+    background-color:black;
+    color: red;
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav div{
+    width: 208px;
+
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+nav div p{
+    margin-left: 11px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+nav div ul{
+    padding-left: 0;
+
+    margin: 0;
+    width: 208px;
+    height: 160px;
+    color: #D03D3D;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav div ul li{
+    padding-left: 35px;
+}
+
+nav div ul li:hover{
+    background-color:#BA0000;
+    transition: 1s;
+}
+
+#nav_second{
+    margin-top: 155px;
+}
+
+.menu{
+    width: 208px;
+    height: 40px;
+    text-decoration: none;
+    color: red;
+
+    display: flex;
+    align-items: center;
+}
+
+.menu:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 1s;
+}
+
+main{
+    background-image: url("image/darkrain.jpg");
+    background-size: 1024px 782px;
+    width:1024px;
+    height:782px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main div{
+    color: navajowhite;
+    font-size: 27px;
+    margin-top: 35px;
+    margin-left : 30px;
+    margin-bottom: 10px;
+}
+
+main hr{
+    width: 1024px;
+    height: 1px;
+    background-color: gray;
+    border: none;
+}
+
+main pre{
+    margin-top: 30px;
+    font-size: 18px;
+    color: navajowhite;
+}
+
+main pre strong{
+    color: red;
+}
+
+#watch_out{
+    position: absolute;
+    width: 300px;
+    height: 61px;
+    left: 1160px;
+    top: 842px;
+
+    font-size: 50px;
+    line-height: 59px;
+
+    color: #930000;
+}
+
+aside{
+    width: 208px;
+    background-color:black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+aside form{
+    background-color: black;
+    color: red;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+
+    margin: 34px 0 0 7px;
+}
+
+aside form label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+}
+
+aside form label input{
+    height: 23px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+aside div button{
+    height: 55px;
+    width: 44px;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FF0000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+    margin-left: 10px;
+    margin-top: 40px;
+    border: none;
+}
+
+#icon{
+    color: red;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1460px;
+    top: 493px;
+}
+
+#search{
+    position: absolute;
+    width: 163px;
+    height: 29px;
+    left: 1477px;
+    top: 488px;
+
+    border-radius: 10px 7px 7px 10px;
+    margin-left: 7px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FF0000;
+
+    border: 1px solid black;
+    box-shadow: gray 1px 1px;
+}
+
+
+aside div div{
+    width: 200px;
+    display: flex;
+    margin-top: 5px;
+    justify-content: flex-end;
+}
+
+aside div div a{
+    color: red;
+    background: black;
+    text-decoration: underline;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+aside div{
+    height: 372px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#advertise{
+    height: 382px;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #000000;
+}
+
+footer{
+    position: absolute;
+    width: 1440px;
+    height: 89px;
+    top: 935px;
+
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+footer div{
+    color: white;
+    margin: 0 10px 10px 0;
+}

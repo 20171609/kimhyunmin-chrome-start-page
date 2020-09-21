@@ -215,14 +215,26 @@ aside{
     flex-direction: column;
 }
 
+aisde div{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+aside p{
+    display: none;
+}
+
+aside span{
+    display: none;
+}
+
 aside form{
-    background-color: black;
     color: red;
     width: 140px;
     display: flex;
     flex-direction: column;
-
-    margin: 34px 0 0 7px;
 }
 
 aside form label{
@@ -250,43 +262,27 @@ aside div button{
     font-weight: bold;
 
     margin-left: 10px;
-    margin-top: 40px;
+    margin-top: 5px;
     border: none;
 }
 
-#icon{
-    color: red;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 1460px;
-    top: 493px;
-}
-
-#search{
-    position: absolute;
-    width: 163px;
-    height: 29px;
-    left: 1477px;
-    top: 488px;
-
-    border-radius: 10px 7px 7px 10px;
-    margin-left: 7px;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FF0000;
-
-    border: 1px solid black;
-    box-shadow: gray 1px 1px;
-}
-
-
-aside div div{
-    width: 200px;
+#SignInForm{
     display: flex;
-    margin-top: 5px;
-    justify-content: flex-end;
+    margin: 34px 0 0 7px;
+    height: 70px;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-aside div div a{
+#forgot{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#forgot a{
     color: red;
     background: black;
     text-decoration: underline;
@@ -294,17 +290,34 @@ aside div div a{
     margin-left: 10px;
 }
 
-aside div{
-    height: 372px;
+#search_Box{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#icon{
+    color: red;
+    width: 70px;
+    height: 70px;
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+}
+
+#search{
+    width: 163px;
+    height: 29px;
+
+    border-radius: 10px 7px 7px 10px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FF0000;
+
+    border: 1px solid black;
+    box-shadow: gray 1px 1px;
 }
 
 #advertise{
     height: 382px;
-
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #000000;
 }
 

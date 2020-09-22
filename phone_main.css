@@ -65,6 +65,10 @@ header p a{
     color: #FF0000;
 }
 
+#watch_out{
+    display: none;
+}
+
 main{
     width: 100%;
     height: 700px;
@@ -190,7 +194,7 @@ nav div ul li:hover{
 aside{
     background: black;
     position: fixed;
-    width: 280px;
+    width: 0px;
     height: 100%;
     right: 0px;
     top: 0px;

@@ -372,6 +372,7 @@ aside form label input{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 3px;
 }
 
 #icon{
@@ -381,6 +382,7 @@ aside form label input{
     padding-left: 7px;
     display: flex;
     align-items: center;
+    margin-bottom: 3px;
 }
 
 #search{

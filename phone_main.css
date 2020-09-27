@@ -287,6 +287,7 @@ aside div button{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 3px;
 }
 
 #icon{
@@ -296,6 +297,7 @@ aside div button{
     padding-left: 7px;
     display: flex;
     align-items: center;
+    margin-bottom: 3px;
 }
 
 #search{

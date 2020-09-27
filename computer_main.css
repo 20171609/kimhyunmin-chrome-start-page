@@ -53,6 +53,14 @@ header p a{
     color: #FF0000;
 }
 
+header span{
+    display: none;
+}
+
+header div{
+    display: none;
+}
+
 #nav_main_aside{
     width: 1440px;
     height: 782px;
@@ -237,7 +245,7 @@ aside form label input{
     border-radius: 5px;
 }
 
-aside div button{
+#sign_in{
     height: 55px;
     width: 44px;
 
@@ -251,6 +259,26 @@ aside div button{
     margin-left: 10px;
     margin-top: 5px;
     border: none;
+}
+
+#sign_up{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#sign_up a{
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #SignInForm{

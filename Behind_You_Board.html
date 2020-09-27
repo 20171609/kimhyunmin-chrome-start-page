@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <title>Behind You Board</title>
-    <link rel="stylesheet" media="(min-width:768px)" href="computer_Board.css"/>
-    <style>
-
-    </style>
+    <link rel="stylesheet" media="(min-width:480px)" href="computer_Board.css"/>
+    <link rel="stylesheet" media="(max-width:480px)" href="phone_Board.css"/>
 </head>
 <body>
     <header>
+        <span id="Menu_Button" onclick="openNav()">=</span>
         <p><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You.html">BEHIND YOU</a></p>
+        <div id="Login_Button" onclick="openAside()"><i class="fas fa-sign-in-alt"></i></div>
     </header>
     <div id="nav_main_aside">
-        <nav>
+        <nav id = "Board_List">
             <div>
                 <p class="hand">Scared Story</p>
                 <ul>
@@ -25,7 +25,7 @@
                     <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">요괴 이야기</a></li>
                 </ul>
             </div>
-
+            <span id = "Nav_Close" onclick="closeNav()">X</span>
             <div id = "nav_second">
                 <p class="hand">BOARD Anithing</p>
                 <ul>
@@ -40,32 +40,26 @@
             <div>귀신에 대한 여러가지 정보.</div>
             <hr>
             <section>
-                <pre>
+                <p>
                     <strong>귀신은 구석진 곳을 좋아한다고 한다</strong>
-
+                    <br><br>
                     - 그래서 책상아래나 옷장위 같은곳에 귀신이 있을 확률이 높다.
-
-
-
+                    <br><br><br><br>
                     <strong>귀신은 사람형체를 띄고 있다.</strong>
-
+                    <br><br>
                     - 길가다가 사람의 형체를 본거같아 돌아보면 어떤 사물이였던적이 있는가?
                     그런경우는 귀신이 장난치는 것이라고 한다.
-
-
-
+                    <br><br><br><br>
                     <strong>귀신은 일정하게 반복되는 소리를 좋아한다.</strong>
-
+                    <br><br>
                     - 시계가 집에 있을때 째깍째깍 소리가 안들린적이 있지 않은가?
                     들리지 않는다면 그때는 귀신이 시계에 씌여있다고 한다.
-
-
-
+                    <br><br><br><br>
                     <strong>귀신얘기를 하면 귀신이 온다고한다.</strong>
-
+                    <br><br>
                     - 만약 이글을 보고있다면 당신 뒤에 있을수도..?
                     나도 이글을 쓰는동안 물건이 계속 떨어졌다. 무섭다 그만쓸래
-                </pre>
+                </p>
             </section>
             <div id="watch_out">Watch out!</div>
         </main>
@@ -78,11 +72,14 @@
                         <label id="ID">ID <input type="text" value=""></label>
                         <label id="PW">PW <input type="password" value=""></label>
                     </form>
-                    <button>LogIn</button>
+                    <button id="sign_in">LogIn</button>
                 </div>
                 <div id="forgot">
                     <a href="" >아이디 찾기</a>
                     <a href="" >비밀번호 찾기</a>
+                </div>
+                <div id="sign_up">
+                    <a href="https://4444.kmuwink.com/Sign_Up">회원가입</a>
                 </div>
                 <div id="search_Box">
                     <div id="icon"><i class="fas fa-search"></i></div>
@@ -101,4 +98,26 @@
         <div>copyright by HYUNMIN</div>
     </footer>
 </body>
+<script>
+    function openNav() {
+        document.getElementById("Board_List").style.width = '280px';
+        document.getElementById("Menu_Button").style.width = '0';
+    }
+
+    function closeNav() {
+        document.getElementById("Board_List").style.width = '0';
+        document.getElementById("Menu_Button").style.width = '50pxpx';
+    }
+
+    function openAside() {
+        document.getElementById("Login_Form").style.width = '280px';
+        document.getElementById("Login_Button").style.width = '0';
+    }
+
+    function closeAside() {
+        document.getElementById("Login_Form").style.width = '0px';
+        document.getElementById("Login_Button").style.width = '50px';
+    }
+
+</script>
 </html>

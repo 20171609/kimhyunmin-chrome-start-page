@@ -18,6 +18,7 @@
     src: url(font/PantonBoldMac.otf) format('truetype');
 }
 
+
 body {
     margin: 0;
     padding-left: 220px;
@@ -36,6 +37,14 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header span{
+    display: none;
+}
+
+header div{
+    display: none;
 }
 
 header p{
@@ -70,6 +79,10 @@ nav{
 
     display: flex;
     flex-direction: column;
+}
+
+nav span{
+    display: none;
 }
 
 nav div{
@@ -157,13 +170,14 @@ main hr{
     border: none;
 }
 
-main pre{
+main p{
     margin-top: 30px;
     font-size: 18px;
     color: navajowhite;
+    margin-left: 10px;
 }
 
-main pre strong{
+main p strong{
     color: red;
 }
 
@@ -223,7 +237,7 @@ aside form label input{
     border-radius: 5px;
 }
 
-aside div button{
+#sign_in{
     height: 55px;
     width: 44px;
 
@@ -237,6 +251,26 @@ aside div button{
     margin-left: 10px;
     margin-top: 5px;
     border: none;
+}
+
+#sign_up{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#sign_up a{
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #SignInForm{

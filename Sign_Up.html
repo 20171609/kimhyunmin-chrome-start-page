@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <link rel="stylesheet" type="text/css" media="(min-width: 480px)" href="computer_Signup.css">
+    <link rel="stylesheet" media="(max-width:480px)" href="phone_Signup.css"/>
     <title>Sign_Up</title>
 </head>
 <body>
@@ -36,7 +37,7 @@
     </nav>
     <main>
         <p>회원 가입</p>
-        <div>
+        <div id="main">
             <div class="form">
                 <h3>
                     <label>이름</label>
@@ -105,4 +106,26 @@
     <div>copyright by HYUNMIN</div>
 </footer>
 </body>
+<script>
+    function openNav() {
+        document.getElementById("Board_List").style.width = '280px';
+        document.getElementById("Menu_Button").style.width = '0';
+    }
+
+    function closeNav() {
+        document.getElementById("Board_List").style.width = '0';
+        document.getElementById("Menu_Button").style.width = '50px';
+    }
+
+    function openAside() {
+        document.getElementById("Login_Form").style.width = '280px';
+        document.getElementById("Login_Button").style.width = '0';
+    }
+
+    function closeAside() {
+        document.getElementById("Login_Form").style.width = '0px';
+        document.getElementById("Login_Button").style.width = '50px';
+    }
+
+</script>
 </html>

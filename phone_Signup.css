@@ -18,34 +18,47 @@
     src: url(font/PantonBoldMac.otf) format('truetype');
 }
 
-.hand{
-    font-family: hand_write, hand_write_m;
-}
-
-body {
+body{
+    background-image: url("image/darkrain.jpg");
     margin: 0;
-    padding-left: 220px;
-    background-color:black;
+    width: 480px;
 }
 
 header{
-    background-image: url("image/darkrain.jpg");
-    width: 1440px;
-    height: 154px;
+    width: 100%;
+    height: 150px;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+header span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: gray;
+    font-size: 50px;
+
+    transition: 0.5s ease-in-out;
+    margin-bottom: 10px;
+}
+
+header div{
+    position: absolute;
+    color: red;
+    font-size: 40px;
+    top: 1%;
+    right: 0;
 }
 
 header p{
+    margin: 0;
     color: #FF0000;
     font-family: scared, scared_m;
 
     font-weight: 900;
-    font-size: 60px;
-    line-height: 75px;
-    text-align: center;
+    font-size: 40px;
 }
 
 header p a{
@@ -53,86 +66,92 @@ header p a{
     color: #FF0000;
 }
 
-header span{
-    display: none;
-}
-
-header div{
-    display: none;
-}
-
-#nav_main_aside{
-    width: 1440px;
-    height: 782px;
-
-    display: flex;
-    flex-direction: row;
-
-}
-
-nav{
-    width: 208px;
-    height: 782px;
-    background-color:black;
-    color: red;
-
+main{
+    width: 480px;
     display: flex;
     flex-direction: column;
 }
 
-nav span{
+main div{
+    color: navajowhite;
+    font-size: 27px;
+    margin-top: 35px;
+    margin-left : 30px;
+    margin-bottom: 10px;
+}
+
+main hr{
+    width: 1024px;
+    height: 1px;
+    background-color: gray;
+    border: none;
+}
+
+main pre{
+    margin-top: 30px;
+    font-size: 18px;
+    color: navajowhite;
+}
+
+main pre strong{
+    color: red;
+}
+
+#watch_out{
     display: none;
 }
 
-nav div{
-    width: 208px;
+nav{
+    background: black;
+    position: fixed;
+    width: 0;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index:1;
+    overflow-x : hidden;
 
-    margin-top: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+#Nav_Close{
+    width: 0;
+    color: gray;
+    position: absolute;
+    right: 10%;
+    top: 2%;
+    font-size: 25px;
+}
+
+nav div{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-#nav_second{
-    margin-top: 155px;
-}
-
-#watch_out{
-    position: absolute;
-    width: 300px;
-    height: 61px;
-    left: 1160px;
-    top: 852px;
-
-    font-size: 50px;
-    line-height: 59px;
-
-    color: #930000;
-}
-
 nav div p{
-    margin-left: 11px;
-    font-weight: 600;
-    font-size: 18px;
+    padding-left: 10px;
+    font-size: 26px;
+    font-family: hand_write, hand_write_m;
+    color: red;
 }
 
 nav div ul{
-    padding-left: 0;
-
-    margin: 0;
-    width: 208px;
-    height: 160px;
-    color: #D03D3D;
+    width: 240px;
     list-style: none;
+    padding: 0;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 nav div ul li{
-    padding-left: 35px;
+    width: 240px;
+    padding-left: 20px;
+    font-weight: bold;
 }
 
 nav div ul li:hover{
@@ -140,9 +159,14 @@ nav div ul li:hover{
     transition: 1s;
 }
 
+#nav_second{
+    margin-top: 100px;
+}
+
 .menu{
-    width: 208px;
+    width: 100%;
     height: 40px;
+    font-size: 20px;
     text-decoration: none;
     color: red;
 
@@ -151,6 +175,7 @@ nav div ul li:hover{
 }
 
 .menu:hover{
+    background-color: #BA0000;
     color: black;
     font-weight: bold;
     font-size: 24px;
@@ -158,23 +183,30 @@ nav div ul li:hover{
 }
 
 main{
-    background-image: url("image/darkrain.jpg");
-    background-size: 1024px 782px;
-    width:1024px;
-    height:782px;
-
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 main p{
     color: white;
     font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 main h3{
     color: white;
+    margin-bottom: 5px;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 0;
 }
 
 .input_input{
@@ -193,7 +225,8 @@ main h3{
 
     justify-content: flex-start;
 
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-left: 0;
 }
 
 .form input{
@@ -206,19 +239,25 @@ main h3{
     width: 150px;
     height: 40px;
     font-size: 20px;
-    color: red;
-    background: white;
+    color: white;
+    background: red;
     border-radius: 10px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-aside{
-    width: 208px;
-    background-color:black;
 
-    display: flex;
-    flex-direction: column;
+aside{
+    background: black;
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    z-index:1;
+    overflow-x : hidden;
+
+    transition: 0.5s ease-in-out;
 }
 
 aisde div{
@@ -229,11 +268,15 @@ aisde div{
 }
 
 aside p{
-    display: none;
+    color: red;
+    font-size: 30px;
+    font-family: hand_write, hand_write_m;
+    margin-left: 15px;
 }
 
 aside span{
-    display: none;
+    color: gray;
+    font-size: 25px;
 }
 
 aside form{
@@ -272,6 +315,17 @@ aside form label input{
     border: none;
 }
 
+#sign_up a{
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #SignInForm{
     display: flex;
     margin: 34px 0 0 7px;
@@ -281,7 +335,7 @@ aside form label input{
 }
 
 #forgot{
-    width: 100%;
+    width: 200px;
     height: 150px;
     display: flex;
     justify-content: flex-end;
@@ -298,17 +352,19 @@ aside form label input{
 
 #search_Box{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
+    margin-bottom: 3px;
 }
 
 #icon{
     color: red;
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     padding-left: 7px;
     display: flex;
     align-items: center;
+    margin-bottom: 3px;
 }
 
 #search{
@@ -329,21 +385,4 @@ aside form label input{
 
 a{
     text-decoration: none;
-}
-
-footer{
-    position: absolute;
-    width: 1440px;
-    height: 89px;
-    top: 935px;
-
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-footer div{
-    color: white;
-    margin: 0 10px 10px 0;
 }

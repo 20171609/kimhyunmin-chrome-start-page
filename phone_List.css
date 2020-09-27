@@ -402,3 +402,10 @@ aside form label input{
 a{
     text-decoration: none;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

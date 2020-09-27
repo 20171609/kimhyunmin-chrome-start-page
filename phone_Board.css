@@ -341,11 +341,10 @@ a{
 }
 
 footer{
-    color: white;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-footer div{
-    margin-right: 10px;
-}
+

@@ -339,3 +339,13 @@ aside form label input{
 a{
     text-decoration: none;
 }
+
+footer{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer div{
+    margin-right: 10px;
+}

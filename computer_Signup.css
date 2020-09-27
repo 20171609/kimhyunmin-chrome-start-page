@@ -1,0 +1,353 @@
+@font-face {
+    font-family: scared;
+    src: url(font/PantonRustHeavy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: hand_write;
+    src: url(font/PantonRustScrSmBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: scared_m;
+    src: url(font/PantonHeavyMac.otf) format('truetype');
+}
+
+@font-face {
+    font-family: hand_write_m;
+    src: url(font/PantonBoldMac.otf) format('truetype');
+}
+
+.hand{
+    font-family: hand_write, hand_write_m;
+}
+
+body {
+    margin: 0;
+    padding-left: 220px;
+    background-color:black;
+}
+
+header{
+    background-image: url("image/darkrain.jpg");
+    width: 1440px;
+    height: 154px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header p{
+    color: #FF0000;
+    font-family: scared, scared_m;
+
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+
+header p a{
+    text-decoration: none;
+    color: #FF0000;
+}
+
+header span{
+    display: none;
+}
+
+header div{
+    display: none;
+}
+
+#nav_main_aside{
+    width: 1440px;
+    height: 782px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav{
+    width: 208px;
+    height: 782px;
+    background-color:black;
+    color: red;
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav span{
+    display: none;
+}
+
+nav div{
+    width: 208px;
+
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#nav_second{
+    margin-top: 155px;
+}
+
+#watch_out{
+    position: absolute;
+    width: 300px;
+    height: 61px;
+    left: 1160px;
+    top: 852px;
+
+    font-size: 50px;
+    line-height: 59px;
+
+    color: #930000;
+}
+
+nav div p{
+    margin-left: 11px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+nav div ul{
+    padding-left: 0;
+
+    margin: 0;
+    width: 208px;
+    height: 160px;
+    color: #D03D3D;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav div ul li{
+    padding-left: 35px;
+}
+
+nav div ul li:hover{
+    background-color:#BA0000;
+    transition: 1s;
+}
+
+.menu{
+    width: 208px;
+    height: 40px;
+    text-decoration: none;
+    color: red;
+
+    display: flex;
+    align-items: center;
+}
+
+.menu:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 1s;
+}
+
+main{
+    background-image: url("image/darkrain.jpg");
+    background-size: 1024px 782px;
+    width:1024px;
+    height:782px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main p{
+    color: white;
+    font-size: 40px;
+}
+
+main h3{
+    color: white;
+}
+
+.input_input{
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    margin-bottom: 30px;
+}
+
+.form input{
+    border: none;
+    margin-left: 5px;
+    height: 30px;
+}
+
+.form input:visited{
+    border: none;
+}
+
+#complete{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    color: red;
+    background: white;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+aside{
+    width: 208px;
+    background-color:black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+aisde div{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+aside p{
+    display: none;
+}
+
+aside span{
+    display: none;
+}
+
+aside form{
+    color: red;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside form label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+}
+
+aside form label input{
+    height: 23px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+#sign_in{
+    height: 55px;
+    width: 44px;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FF0000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+    margin-left: 10px;
+    margin-top: 5px;
+    border: none;
+}
+
+#SignInForm{
+    display: flex;
+    margin: 34px 0 0 7px;
+    height: 70px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#forgot{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#forgot a{
+    color: red;
+    background: black;
+    text-decoration: underline;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#search_Box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#icon{
+    color: red;
+    width: 70px;
+    height: 70px;
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+}
+
+#search{
+    width: 163px;
+    height: 29px;
+
+    border-radius: 10px 7px 7px 10px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FF0000;
+
+    border: 1px solid black;
+    box-shadow: gray 1px 1px;
+}
+
+#advertise{
+    height: 382px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #000000;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    position: absolute;
+    width: 1440px;
+    height: 89px;
+    top: 935px;
+
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+footer div{
+    color: white;
+    margin: 0 10px 10px 0;
+}

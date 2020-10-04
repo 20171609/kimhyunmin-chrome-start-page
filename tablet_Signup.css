@@ -21,7 +21,6 @@
 body{
     background-image: url("image/darkrain.jpg");
     margin: 0;
-    width: 480px;
 }
 
 header{
@@ -364,6 +363,6 @@ footer{
     height: 100px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     color: white;
 }

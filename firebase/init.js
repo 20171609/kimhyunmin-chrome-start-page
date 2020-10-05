@@ -12,18 +12,3 @@ var config = {
 firebase.initializeApp(config);
 // Your web app's Firebase configuration
 
-// Sign out
-function signOut() {
-    if(!confirm("Do you really want to log out?")) {
-        return;
-    }
-
-    firebase.auth().signOut().then(function() {
-        location.reload();
-    }, function(e) {
-        lastWork = "authorized";
-        $("#error #errmsg").html(e.message)
-        $("#error").show();
-        $("#authorized").hide();
-    });
-}

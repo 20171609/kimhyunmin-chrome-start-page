@@ -87,10 +87,10 @@
                 <p>Login</p>
                 <div id="SignInForm">
                     <form>
-                        <label id="ID">ID <input type="text" value=""></label>
-                        <label id="PW">PW <input type="password" value=""></label>
+                        <label>ID <input id="ID" type="text" value=""></label>
+                        <label>PW <input id="PW" type="password" value=""></label>
                     </form>
-                    <button id="sign_in">LogIn</button>
+                    <button id="sign_in" onclick="signIn()">LogIn</button>
                 </div>
                 <div id="forgot">
                     <a href="" >아이디 찾기</a>
@@ -113,31 +113,4 @@
         <div>copyright by HYUNMIN</div>
     </footer>
 </body>
-<script>
-
-
-
-    function signUp() {
-        var email = document.getElementById('email').value;
-        var pw = document.getElementById('password').value;
-        var check = document.getElementById('checkpw').value;
-        var name = document.getElementById('name').value;
-
-        if(pw != check) {
-            alert("Password does not match the confirm password.");
-            return;
-        }
-
-        firebase.auth().createUserWithEmailAndPassword(email, pw)
-            .then(function() {
-                alert("회원가입 되었습니다!!!!");
-            });
-    }
-
-    function signOut() {
-        firebase.auth().signOut().then(function() {
-            location.reload();
-        });
-    }
-</script>
 </html>

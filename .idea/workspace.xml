@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc182650-01bc-440f-bbd4-4d08d721389b" name="Default Changelist" comment="회원가입 구현">
+      <change beforePath="$PROJECT_DIR$/Behind_You.html" beforeDir="false" afterPath="$PROJECT_DIR$/Behind_You.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sign_Up.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sign_Up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/firebase/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hSxoHmF6E4VGqOiqAQMQVyXVJR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sign_Up.html" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.Sign_up">
+    <configuration name="Behind_You" type="JavascriptDebugType" uri="http://localhost:63342/kimhyunmin-chrome-start-page/Behind_You.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Behind_You_Board.html" type="JavascriptDebugType" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/kimhyunmin-chrome-start-page/Behind_You_Board.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="List" type="JavascriptDebugType" uri="http://localhost:63342/kimhyunmin-chrome-start-page/Behind_You_List.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Sign_up" type="JavascriptDebugType" uri="http://localhost:63342/kimhyunmin-chrome-start-page/Sign_Up.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Behind_You" />
+      <item itemvalue="JavaScript Debug.List" />
+      <item itemvalue="JavaScript Debug.Behind_You_Board.html" />
+      <item itemvalue="JavaScript Debug.Sign_up" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc182650-01bc-440f-bbd4-4d08d721389b" name="Default Changelist" comment="" />
+      <created>1600018467549</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600018467549</updated>
+      <workItem from="1600018469630" duration="241000" />
+      <workItem from="1600019667450" duration="724000" />
+      <workItem from="1600053799962" duration="2950000" />
+      <workItem from="1600472806029" duration="11239000" />
+      <workItem from="1600549469043" duration="16649000" />
+      <workItem from="1600573143201" duration="926000" />
+      <workItem from="1600580094416" duration="5705000" />
+      <workItem from="1600586104390" duration="654000" />
+      <workItem from="1600655670371" duration="12401000" />
+      <workItem from="1600776719206" duration="699000" />
+      <workItem from="1601198808045" duration="10194000" />
+      <workItem from="1601788133907" duration="21783000" />
+      <workItem from="1601858494065" duration="8106000" />
+    </task>
+    <task id="LOCAL-00001" summary="second_page">
+      <created>1600478455801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600478455801</updated>
+    </task>
+    <task id="LOCAL-00002" summary="link연결">
+      <created>1600478769147</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600478769147</updated>
+    </task>
+    <task id="LOCAL-00003" summary="List 페이지">
+      <created>1600550000995</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600550000996</updated>
+    </task>
+    <task id="LOCAL-00004" summary="링크 연결">
+      <created>1600550137095</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600550137095</updated>
+    </task>
+    <task id="LOCAL-00005" summary="css파일로 변경">
+      <created>1600665707338</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600665707338</updated>
+    </task>
+    <task id="LOCAL-00006" summary="main페이지 mobile반응형">
+      <created>1600665741407</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600665741407</updated>
+    </task>
+    <task id="LOCAL-00007" summary="aside 수정">
+      <created>1600666255016</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600666255016</updated>
+    </task>
+    <task id="LOCAL-00008" summary="aside 수정">
+      <created>1600776769406</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600776769406</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Sign_up 페이지">
+      <created>1601203583791</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601203583791</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Sign_up 페이지 연결">
+      <created>1601204217536</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601204217536</updated>
+    </task>
+    <task id="LOCAL-00011" summary="오타수정">
+      <created>1601205111380</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601205111381</updated>
+    </task>
+    <task id="LOCAL-00012" summary="게시판 반응형 추가">
+      <created>1601206060764</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601206060764</updated>
+    </task>
+    <task id="LOCAL-00013" summary="수정">
+      <created>1601206855046</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1601206855046</updated>
+    </task>
+    <task id="LOCAL-00014" summary="수정">
+      <created>1601207210208</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1601207210208</updated>
+    </task>
+    <task id="LOCAL-00015" summary="리스트 페이지 반응형">
+      <created>1601208461017</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1601208461017</updated>
+    </task>
+    <task id="LOCAL-00016" summary="리스트 페이지 반응형">
+      <created>1601208472146</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1601208472146</updated>
+    </task>
+    <task id="LOCAL-00017" summary="수정">
+      <created>1601208603317</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1601208603317</updated>
+    </task>
+    <task id="LOCAL-00018" summary="회원가입 페이지 반응형">
+      <created>1601209465612</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1601209465612</updated>
+    </task>
+    <task id="LOCAL-00019" summary="수정">
+      <created>1601209516620</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1601209516620</updated>
+    </task>
+    <task id="LOCAL-00020" summary="main tablet반응형">
+      <created>1601799973267</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1601799973267</updated>
+    </task>
+    <task id="LOCAL-00021" summary="List tablet반응형">
+      <created>1601801445506</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1601801445506</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Board tablet반응형">
+      <created>1601802289910</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1601802289910</updated>
+    </task>
+    <task id="LOCAL-00023" summary="SignUp tablet반응형">
+      <created>1601803366708</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1601803366708</updated>
+    </task>
+    <task id="LOCAL-00024" summary="수정">
+      <created>1601803926949</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1601803926949</updated>
+    </task>
+    <task id="LOCAL-00025" summary="font-family 마지막 디폴트값추가">
+      <created>1601804266641</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1601804266641</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Signup 페이지 반응형 추가">
+      <created>1601812757034</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1601812757034</updated>
+    </task>
+    <task id="LOCAL-00027" summary="OpenSide 자바스크립트 파일로 변경">
+      <created>1601813109817</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1601813109817</updated>
+    </task>
+    <task id="LOCAL-00028" summary="회원가입 구현">
+      <created>1601867439851</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1601867439852</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second_page" />
+    <MESSAGE value="link연결" />
+    <MESSAGE value="List 페이지" />
+    <MESSAGE value="링크 연결" />
+    <MESSAGE value="css파일로 변경" />
+    <MESSAGE value="main페이지 mobile반응형" />
+    <MESSAGE value="aside 수정" />
+    <MESSAGE value="Sign_up 페이지" />
+    <MESSAGE value="Sign_up 페이지 연결" />
+    <MESSAGE value="오타수정" />
+    <MESSAGE value="게시판 반응형 추가" />
+    <MESSAGE value="리스트 페이지 반응형" />
+    <MESSAGE value="회원가입 페이지 반응형" />
+    <MESSAGE value="main tablet반응형" />
+    <MESSAGE value="List tablet반응형" />
+    <MESSAGE value="Board tablet반응형" />
+    <MESSAGE value="SignUp tablet반응형" />
+    <MESSAGE value="수정" />
+    <MESSAGE value="font-family 마지막 디폴트값추가" />
+    <MESSAGE value="Signup 페이지 반응형 추가" />
+    <MESSAGE value="OpenSide 자바스크립트 파일로 변경" />
+    <MESSAGE value="회원가입 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="회원가입 구현" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="355" y="202" width="1092" height="790" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601201339904">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="355" y="202" width="1092" height="790" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601201339904" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601812992883">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601812992883" />
+    <state x="681" y="300" key="FileChooserDialogImpl" timestamp="1601201336695">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="300" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601201336695" />
+    <state width="1899" height="198" key="GridCell.Tab.0.bottom" timestamp="1601909273164">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601909273164" />
+    <state width="1899" height="198" key="GridCell.Tab.0.center" timestamp="1601909273161">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601909273161" />
+    <state width="1899" height="198" key="GridCell.Tab.0.left" timestamp="1601909273161">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601909273161" />
+    <state width="1899" height="198" key="GridCell.Tab.0.right" timestamp="1601909273162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601909273162" />
+    <state width="1899" height="198" key="GridCell.Tab.1.bottom" timestamp="1601909272760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601909272760" />
+    <state width="1899" height="198" key="GridCell.Tab.1.center" timestamp="1601909272760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601909272760" />
+    <state width="1899" height="198" key="GridCell.Tab.1.left" timestamp="1601909272760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601909272760" />
+    <state width="1899" height="198" key="GridCell.Tab.1.right" timestamp="1601909272760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601909272760" />
+    <state width="1899" height="198" key="GridCell.Tab.2.bottom" timestamp="1601909272761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601909272761" />
+    <state width="1899" height="198" key="GridCell.Tab.2.center" timestamp="1601909272761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601909272761" />
+    <state width="1899" height="198" key="GridCell.Tab.2.left" timestamp="1601909272761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601909272761" />
+    <state width="1899" height="198" key="GridCell.Tab.2.right" timestamp="1601909272761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601909272761" />
+    <state width="1899" height="198" key="GridCell.Tab.3.bottom" timestamp="1601909272761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601909272761" />
+    <state width="1899" height="198" key="GridCell.Tab.3.center" timestamp="1601909272761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601909272761" />
+    <state width="1899" height="198" key="GridCell.Tab.3.left" timestamp="1601909272761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601909272761" />
+    <state width="1899" height="198" key="GridCell.Tab.3.right" timestamp="1601909272761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="198" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601909272761" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601867444200">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601867444200" />
+    <state x="648" y="327" width="672" height="678" key="search.everywhere.popup" timestamp="1601800522974">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="648" y="327" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601800522974" />
+  </component>
+</project>

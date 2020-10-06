@@ -257,6 +257,7 @@ aside form label input{
     margin-left: 10px;
     margin-top: 5px;
     border: none;
+    overflow-x: hidden;
 }
 
 #sign_up a{

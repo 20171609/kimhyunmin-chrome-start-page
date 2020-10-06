@@ -20,6 +20,8 @@ function remainSignIn(){
 }
 
 function signUp() {
+    let user = firebase.auth().currentUser;
+    alert(user);
     let id = document.getElementById('email').value;
     let pw = document.getElementById('password').value;
     let cf = document.getElementById('checkpw').value;

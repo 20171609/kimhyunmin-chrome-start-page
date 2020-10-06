@@ -86,6 +86,18 @@ function signOut() {
     });
 }
 
+//check login
+function isLogin(){
+    let user = firebase.auth().currentUser;
+    alert(user);
+    if(user){
+        document.getElementById('SignInForm').style.height = '0px';
+        document.getElementById('forgot').style.height = '0px';
+        document.getElementById('SignedForm').style.height = '70px';
+        document.getElementById('SignOut').style.height = '150px';
+    }
+}
+
 // function back() {
 //     $("#" + lastWork).show();
 //     $("#error").hide();

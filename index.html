@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" media="(max-width: 480px)" href="phone_main.css">
     <title>Behind_You</title>
 <body>
-    <header>
+    <header onclick="playVideo()">
         <span id="Menu_Button" onclick="openNav()">=</span>
         <p><a href="https://4444.kmuwink.com/">BEHIND YOU</a></p>
         <div id="Login_Button" onclick="openAside()"><i class="fas fa-sign-in-alt"></i></div>
@@ -45,7 +45,7 @@
                 </ul>
             </div>
         </nav>
-        <main>
+        <main onclick="playVideo()">
             <section>
                 <div class="hand">Today's Story</div>
                 <ul>
@@ -104,37 +104,33 @@
         </aside>
     </div>
 
-    <footer>
+    <footer onclick="stopVideo()">
         <div>copyright by HYUNMIN</div>
         <div id="player"></div>
-
     </footer>
 </body>
-<script>
-    isLogin();
-</script>
 <script>
     // 2. This code loads the IFrame Player API code asynchronously.
     let tag = document.createElement('script');
 
-    tag.src = "https://www.youtube.com/iframe_api";
+    tag.src = 'https://www.youtube.com/iframe_api';
     let firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     let player;
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-            videoId: 'u_YoR8OZvRA&t=14s',
+            videoId: 'acYH78c5tuQ',
             playerVars: { 'autoplay': 1, 'controls': 0 },
             events: {
                 'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
+                'onStateChange': onPlayerStateChange,
             }
         });
     }
 
     function onPlayerReady(event) {
-        event.target.setVolume(100);
+        event.target.setVolume(7);
         event.target.playVideo();
     }
 
@@ -143,13 +139,19 @@
     //    the player should play for six seconds and then stop.
     var done = false;
     function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
+        if (event.data === YT.PlayerState.PLAYING && !done) {
             setTimeout(stopVideo, 6000000);
             done = true;
         }
     }
+    function playVideo(){
+        player.playVideo();
+    }
     function stopVideo() {
         player.stopVideo();
     }
+</script>
+<script>
+    isLogin();
 </script>
 </html>

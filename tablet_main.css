@@ -385,3 +385,7 @@ footer{
     align-items: center;
     color: white;
 }
+
+#player{
+    display: none;
+}

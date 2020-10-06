@@ -386,3 +386,7 @@ footer div{
     color: white;
     margin: 0 10px 10px 0;
 }
+
+#player{
+    display: none;
+}

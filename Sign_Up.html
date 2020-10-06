@@ -122,11 +122,21 @@
 
         </aside>
     </div>
-    <footer>
+    <footer onclick="isLogin()">
         <div>copyright by HYUNMIN</div>
     </footer>
 </body>
 <script>
-    isLogin();
+    let isLogin = function (){
+        let user = firebase.auth().currentUser;
+        if(user){
+            document.getElementById('SignInForm').style.height = '0px';
+            document.getElementById('forgot').style.height = '0px';
+            document.getElementById('SignedForm').style.height = '70px';
+            document.getElementById('SignOut').style.height = '150px';
+        }
+    }
+
+    checkLogin(isLogin);
 </script>
 </html>

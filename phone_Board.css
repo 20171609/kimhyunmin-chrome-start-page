@@ -370,4 +370,6 @@ footer{
     color: white;
 }
 
-
+#player{
+    display:none;
+}

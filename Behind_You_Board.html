@@ -19,7 +19,7 @@
     <link rel="stylesheet" media="(max-width:480px)" href="phone_Board.css"/>
 </head>
 <body>
-    <header>
+    <header onclick="playVideo()">
         <span id="Menu_Button" onclick="openNav()">=</span>
         <p><a href="https://4444.kmuwink.com/">BEHIND YOU</a></p>
         <div id="Login_Button" onclick="openAside()"><i class="fas fa-sign-in-alt"></i></div>
@@ -46,7 +46,7 @@
                 </ul>
             </div>
         </nav>
-        <main>
+        <main onclick="playVideo()">
             <div>귀신에 대한 여러가지 정보.</div>
             <hr>
             <section>
@@ -110,10 +110,52 @@
 
         </aside>
     </div>
-    <footer>
+    <footer onclick="stopVideo()">
         <div>copyright by HYUNMIN</div>
+        <div id="player"></div>
     </footer>
 </body>
+<script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    let tag = document.createElement('script');
+
+    tag.src = 'https://www.youtube.com/iframe_api';
+    let firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    let player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            videoId: 'h1Hb9yElwX4',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange,
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.setVolume(7);
+        event.target.playVideo();
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = false;
+    function onPlayerStateChange(event) {
+        if (event.data === YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000000);
+            done = true;
+        }
+    }
+    function playVideo(){
+        player.playVideo();
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+</script>
 <script>
     isLogin();
 </script>

@@ -20,8 +20,6 @@ function remainSignIn(){
 }
 
 function signUp() {
-    let user = firebase.auth().currentUser;
-    alert(user);
     let id = document.getElementById('email').value;
     let pw = document.getElementById('password').value;
     let cf = document.getElementById('checkpw').value;
@@ -93,7 +91,6 @@ function signOut() {
 //check login
 function isLogin(){
     let user = firebase.auth().currentUser;
-    alert(user);
     if(user){
         document.getElementById('SignInForm').style.height = '0px';
         document.getElementById('forgot').style.height = '0px';

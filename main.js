@@ -73,10 +73,10 @@ function signOut() {
 
     firebase.auth().signOut().then(function() {
         location.reload();
-        document.getElementById('SignInForm').height = '70px';
-        document.getElementById('forgot').height = '150px';
-        document.getElementById('SignedForm').height = '0';
-        document.getElementById('SignOut').height = '0';
+        document.getElementById('SignInForm').style.height = '70px';
+        document.getElementById('forgot').style.height = '150px';
+        document.getElementById('SignedForm').style.height = '0';
+        document.getElementById('SignOut').style.height = '0';
 
     }, function(e) {
         lastWork = "authorized";

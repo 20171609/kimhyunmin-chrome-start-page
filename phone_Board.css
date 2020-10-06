@@ -251,6 +251,15 @@ aside form label input{
     overflow-x: hidden;
 }
 
+#sign_up{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
 #sign_up a{
     width: 200px;
     height: 40px;

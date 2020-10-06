@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="firebases/init.js"></script>
+    <script src="main.js"></script>
     <script type="text/javascript" src="OpenSide.js"></script>
     <title>Behind You List</title>
     <link rel="stylesheet" media="(min-width:768px)" href="computer_List.css"/>
@@ -60,22 +68,25 @@
         </ul>
     </main>
     <aside id="Login_Form">
-        <div>
+        <div id="login">
             <span id = "Aside_Close" onclick="closeAside()">X</span>
-            <p>Login</p>
+            <p class="noComputer">Login</p>
             <div id="SignInForm">
                 <form>
-                    <label id="ID">ID <input type="text" value=""></label>
-                    <label id="PW">PW <input type="password" value=""></label>
+                    <label>ID <input id="ID" type="text" value=""></label>
+                    <label>PW <input id="PW" type="password" value=""></label>
                 </form>
-                <button id="sign_in">LogIn</button>
+                <button id="sign_in" onclick="remainSignIn()">LogIn</button>
             </div>
             <div id="forgot">
                 <a href="" >아이디 찾기</a>
                 <a href="" >비밀번호 찾기</a>
             </div>
-            <div id="sign_up">
-                <a href="https://4444.kmuwink.com/Sign_Up">회원가입</a>
+            <div id="SignedForm">
+                <p id="hello">안녕!</p>
+            </div>
+            <div id="SignOut">
+                <button onclick="signOut()">로그아웃</button>
             </div>
             <div id="search_Box">
                 <div id="icon"><i class="fas fa-search"></i></div>
@@ -87,6 +98,7 @@
                 AD
             </a>
         </div>
+
     </aside>
 </div>
 <footer>

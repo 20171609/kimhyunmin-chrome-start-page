@@ -53,8 +53,9 @@ function signIn() {
     firebase.auth().signInWithEmailAndPassword(id, pw)
         .then(function() {
             alert("로그인 되었습니당")
-            document.getElementById('SignInForm').style.height = '0px';
-            document.getElementById('forgot').style.height = '0px';
+            document.getElementById('sign_up').style.height = '0';
+            document.getElementById('SignInForm').style.height = '0';
+            document.getElementById('forgot').style.height = '0';
             document.getElementById('SignedForm').style.height = '70px';
             document.getElementById('SignOut').style.height = '150px';
         })
@@ -75,6 +76,7 @@ function signOut() {
 
     firebase.auth().signOut().then(function() {
         location.reload();
+        document.getElementById('sign_up').style.height = '55px';
         document.getElementById('SignInForm').style.height = '70px';
         document.getElementById('forgot').style.height = '150px';
         document.getElementById('SignedForm').style.height = '0';

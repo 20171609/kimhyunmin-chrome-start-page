@@ -50,6 +50,7 @@ function signIn() {
     let pw = document.getElementById('PW').value;
     firebase.auth().signInWithEmailAndPassword(id, pw)
         .then(function() {
+            alert("로그인 되었습니당")
             document.getElementById('SignInForm').style.height = '0px';
             document.getElementById('forgot').style.height = '0px';
             document.getElementById('SignedForm').style.height = '70px';

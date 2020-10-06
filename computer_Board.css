@@ -261,6 +261,7 @@ aside form label input{
     background-color: white;
     margin-left: 10px;
     font-weight: bold;
+    overflow-x: hidden;
 }
 
 #sign_up a{

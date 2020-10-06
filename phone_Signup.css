@@ -75,8 +75,8 @@ nav{
     position: fixed;
     width: 0;
     height: 100%;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     z-index:1;
     overflow-x : hidden;
 
@@ -102,7 +102,7 @@ nav div{
 nav div p{
     padding-left: 10px;
     font-size: 26px;
-    font-family: hand_write, hand_write_m;
+    font-family: hand_write, hand_write_m, serif;
     color: red;
 }
 
@@ -223,10 +223,10 @@ main h3{
 aside{
     background: black;
     position: fixed;
-    width: 0px;
+    width: 0;
     height: 100%;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     z-index:1;
     overflow-x : hidden;
 
@@ -243,7 +243,7 @@ aisde div{
 aside p{
     color: red;
     font-size: 30px;
-    font-family: hand_write, hand_write_m;
+    font-family: hand_write, hand_write_m, serif;
     margin-left: 15px;
 }
 

@@ -290,6 +290,7 @@ aside form label input{
 }
 
 #sign_up{
+    display: none;
     width: 200px;
     height: 40px;
     border-radius: 10px;

@@ -2,6 +2,23 @@ $(document).ready(function() {
     $("#error").hide();
 });
 
+function remainSignIn(){
+    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+        .then(function() {
+            // Existing and future Auth states are now persisted in the current
+            // session only. Closing the window would clear any existing state even
+            // if a user forgets to sign out.
+            // ...
+            // New sign-in will be persisted with session persistence.
+            return signIn();
+        })
+        .catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+        });
+}
+
 function signUp() {
     let id = document.getElementById('email').value;
     let pw = document.getElementById('password').value;
@@ -14,7 +31,7 @@ function signUp() {
 
     firebase.auth().createUserWithEmailAndPassword(id, pw)
         .then(function() {
-            alert("Signed Up!");
+            alert("가입 완료!!");
             document.getElementById('email').value = "";
             document.getElementById('password').value = "";
             document.getElementById('checkpw').value = "";
@@ -30,13 +47,13 @@ function signUp() {
 
 function signIn() {
     let id = document.getElementById('ID').value;
-    let pw = document.getElementById('PW').value
+    let pw = document.getElementById('PW').value;
     firebase.auth().signInWithEmailAndPassword(id, pw)
         .then(function() {
-            alert("login complete");
-            // $("#Login_Form").hide();
-            // $("#authorized").show();
-            location.href = "Behind_You.html";
+            document.getElementById('SignInForm').style.height = '0px';
+            document.getElementById('forgot').style.height = '0px';
+            document.getElementById('SignedForm').style.height = '70px';
+            document.getElementById('SignOut').style.height = '150px';
         })
         .catch(function(e) {
             lastWork = "signIn";
@@ -49,12 +66,17 @@ function signIn() {
 
 // Sign out
 function signOut() {
-    if(!confirm("Do you really want to log out?")) {
+    if(!confirm("진짜 로그아웃 하실거에요?")) {
         return;
     }
 
     firebase.auth().signOut().then(function() {
         location.reload();
+        document.getElementById('SignInForm').height = '70px';
+        document.getElementById('forgot').height = '150px';
+        document.getElementById('SignedForm').height = '0';
+        document.getElementById('SignOut').height = '0';
+
     }, function(e) {
         lastWork = "authorized";
         $("#error #errmsg").html(e.message)

@@ -4,10 +4,12 @@
         <meta charset="UTF-8">
         <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
         <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="//www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-        <script src="firebase/init.js"></script>
+        <script src="firebases/init.js"></script>
         <script src="main.js"></script>
         <script type="text/javascript" src="OpenSide.js"></script>
         <link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="computer_Signup.css">
@@ -84,17 +86,23 @@
         <aside id="Login_Form">
             <div id="login">
                 <span id = "Aside_Close" onclick="closeAside()">X</span>
-                <p>Login</p>
+                <p class="noComputer">Login</p>
                 <div id="SignInForm">
                     <form>
                         <label>ID <input id="ID" type="text" value=""></label>
                         <label>PW <input id="PW" type="password" value=""></label>
                     </form>
-                    <button id="sign_in" onclick="signIn()">LogIn</button>
+                    <button id="sign_in" onclick="remainSignIn()">LogIn</button>
                 </div>
                 <div id="forgot">
                     <a href="" >아이디 찾기</a>
                     <a href="" >비밀번호 찾기</a>
+                </div>
+                <div id="SignedForm">
+                    <p id="hello">안녕!</p>
+                </div>
+                <div id="SignOut">
+                    <button onclick="signOut()">로그아웃</button>
                 </div>
                 <div id="search_Box">
                     <div id="icon"><i class="fas fa-search"></i></div>

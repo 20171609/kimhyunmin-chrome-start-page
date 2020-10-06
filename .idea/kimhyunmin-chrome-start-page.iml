@@ -14,5 +14,7 @@
     <orderEntry type="library" name="jquery-1.12.0" level="application" />
     <orderEntry type="library" name="jquery-migrate-1.2.1" level="application" />
     <orderEntry type="library" name="firebase" level="application" />
+    <orderEntry type="library" name="firebase-firestore" level="application" />
+    <orderEntry type="library" name="firebase-database" level="application" />
   </component>
 </module>

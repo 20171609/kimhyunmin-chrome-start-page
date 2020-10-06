@@ -17,7 +17,17 @@
     <link rel="stylesheet" media="(min-width:768px)" href="computer_List.css"/>
     <link rel="stylesheet" media="(min-width:480px) and (max-width:768px)" href="tablet_List.css"/>
     <link rel="stylesheet" media="(max-width:480px)" href="phone_List.css"/>
-
+    <script>
+        window.onload = function (){
+            let user = firebase.auth().currentUser;
+            if(user){
+                document.getElementById('SignInForm').style.height = '0px';
+                document.getElementById('forgot').style.height = '0px';
+                document.getElementById('SignedForm').style.height = '70px';
+                document.getElementById('SignOut').style.height = '150px';
+            }
+        }
+    </script>
 </head>
 <body>
 <header>

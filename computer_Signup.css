@@ -257,25 +257,13 @@ aside form label input{
 }
 
 #sign_up{
-    display: none;
     width: 200px;
     height: 40px;
     border-radius: 10px;
-    background-color: white;
+    background-color: black;
     margin-left: 10px;
     font-weight: bold;
     overflow-x: hidden;
-}
-
-#sign_up a{
-    width: 200px;
-    height: 40px;
-    text-decoration: none;
-    color: red;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #sign_in{

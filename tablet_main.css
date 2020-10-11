@@ -201,10 +201,10 @@ nav div ul li:hover{
 aside{
     background: black;
     position: fixed;
-    width: 0px;
+    width: 0;
     height: 100%;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     z-index:1;
     overflow-x : hidden;
 
@@ -372,7 +372,13 @@ aside form label input{
 
 #advertise{
     height: 382px;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #000000;
+    background: white;
+}
+
+.adimg{
+    width: 240px;
+    height: 100px;
+    margin: 0 0 30px 0;
 }
 
 a{

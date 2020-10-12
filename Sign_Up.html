@@ -1,142 +1,132 @@
 <!DOCTYPE html>
 <html lang="kr">
-    <head>
-        <meta charset="UTF-8">
-        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
-        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="firebases/init.js"></script>
-        <script src="main.js"></script>
-        <script type="text/javascript" src="OpenSide.js"></script>
-        <link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="computer_Signup.css">
-        <link rel="stylesheet" media="(min-width:480px) and (max-width:768px)" href="tablet_Signup.css"/>
-        <link rel="stylesheet" media="(max-width:480px)" href="phone_Signup.css"/>
-        <title>Sign_Up</title>
-    </head>
-<body>
-    <header>
-        <span id="Menu_Button" onclick="openNav()">=</span>
-        <p><a href="https://4444.kmuwink.com/">BEHIND YOU</a></p>
-        <div id="Login_Button" onclick="openAside()"><i class="fas fa-sign-in-alt"></i></div>
-    </header>
-    <div id="nav_main_aside">
-        <nav id = "Board_List">
-            <div>
-                <p class="hand">Scared Story</p>
-                <ul>
-                    <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">도시 괴담</a></li>
-                    <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">인터넷 괴담</a></li>
-                    <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">귀신 이야기</a></li>
-                    <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">요괴 이야기</a></li>
-                </ul>
-            </div>
-            <span id = "Nav_Close" onclick="closeNav()">X</span>
-            <div id = "nav_second">
-                <p class="hand">BOARD Anithing</p>
-                <ul>
-                    <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">자유 게시판</a></li>
-                    <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">괴담 게시판</a></li>
-                    <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">이야기 후기</a></li>
-                    <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">?????????</a></li>
-                </ul>
-            </div>
-        </nav>
-        <main>
-            <p>회원 가입</p>
-            <div id="main">
-                <div class="form">
-                    <h3>
-                        <label>이름</label>
-                    </h3>
-                    <span class="input_input">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="firebases/init.js"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="OpenSide.js"></script>
+    <link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="computer_Signup.css">
+    <link rel="stylesheet" media="(min-width:480px) and (max-width:768px)" href="tablet_Signup.css"/>
+    <link rel="stylesheet" media="(max-width:480px)" href="phone_Signup.css"/>
+    <title>Sign_Up</title>
+</head>
+<body onmousemove="checkLogin()">
+<header>
+    <span id="Menu_Button" onclick="openNav()">=</span>
+    <p><a href="https://4444.kmuwink.com/">BEHIND YOU</a></p>
+    <div id="Login_Button" onclick="openAside()"><i class="fas fa-sign-in-alt"></i></div>
+</header>
+<div id="nav_main_aside">
+    <nav id = "Board_List">
+        <div>
+            <p class="hand">Scared Story</p>
+            <ul>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">도시 괴담</a></li>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">인터넷 괴담</a></li>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">귀신 이야기</a></li>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">요괴 이야기</a></li>
+            </ul>
+        </div>
+        <span id = "Nav_Close" onclick="closeNav()">X</span>
+        <div id = "nav_second">
+            <p class="hand">BOARD Anithing</p>
+            <ul>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">자유 게시판</a></li>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">괴담 게시판</a></li>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">이야기 후기</a></li>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">?????????</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <p>회원 가입</p>
+        <div id="main">
+            <div class="form">
+                <h3>
+                    <label>이름</label>
+                </h3>
+                <span class="input_input">
                         <input id="name" type="text" value="">
                     </span>
-                </div>
-                <div class="form">
-                    <h3>
-                        <label>이메일</label>
-                    </h3>
-                    <span class="input_input">
+            </div>
+            <div class="form">
+                <h3>
+                    <label>이메일</label>
+                </h3>
+                <span class="input_input">
                         <input id="email" type="text" value="">
                     </span>
-                </div>
-                <div class="form">
-                    <h3>
-                        <label>비밀번호</label>
-                    </h3>
-                    <span class="input_input">
+            </div>
+            <div class="form">
+                <h3>
+                    <label>비밀번호</label>
+                </h3>
+                <span class="input_input">
                         <input id="password" type="password" value="">
                     </span>
-                </div>
-                <div class="form">
-                    <h3>
-                        <label>비밀번호 확인</label>
-                    </h3>
-                    <span class="input_input">
+            </div>
+            <div class="form">
+                <h3>
+                    <label>비밀번호 확인</label>
+                </h3>
+                <span class="input_input">
                         <input id="checkpw" type="password" value="">
                     </span>
-                </div>
             </div>
-            <button onclick="signUp()" id="complete">가입하기</button>
-        </main>
-        <aside id="Login_Form">
-            <div id="login">
-                <span id = "Aside_Close" onclick="closeAside()">X</span>
-                <p class="noComputer">Login</p>
-                <div id="SignInForm">
-                    <form>
-                        <label>ID <input id="ID" type="text" value=""></label>
-                        <label>PW <input id="PW" type="password" value=""></label>
-                    </form>
-                    <button id="sign_in" onclick="remainSignIn()">LogIn</button>
-                </div>
-                <div id="forgot">
-                    <a href="" >아이디 찾기</a>
-                    <a href="" >비밀번호 찾기</a>
-                </div>
-                <div id="SignedForm">
-                    <p id="hello">안녕!</p>
-                </div>
-                <div id="SignOut">
-                    <button onclick="signOut()">로그아웃</button>
-                </div>
-                <div id="sign_up">
-                </div>
-                <div id="search_Box">
-                    <div id="icon"><i class="fas fa-search"></i></div>
-                    <input id="search" type="text" value="">
-                </div>
+        </div>
+        <button onclick="signUp()" id="complete">가입하기</button>
+    </main>
+    <aside id="Login_Form">
+        <div id="login">
+            <span id = "Aside_Close" onclick="closeAside()">X</span>
+            <p class="noComputer">Login</p>
+            <div id="SignInForm">
+                <form>
+                    <label>ID <input id="ID" type="text" value=""></label>
+                    <label>PW <input id="PW" type="password" value=""></label>
+                </form>
+                <button id="sign_in" onclick="remainSignIn()">LogIn</button>
             </div>
-            <div id="advertise">
-                <a href="https://tanger2ne.kmuwink.com/" target="_blank">
-                    AD
-                </a>
-                <a href="https://jjutopia.kmuwink.com/" target="_blank">
-                    AD2
-                </a>
+            <div id="forgot">
+                <a href="" >아이디 찾기</a>
+                <a href="" >비밀번호 찾기</a>
             </div>
+            <div id="SignedForm">
+                <p id="hello">안녕!</p>
+            </div>
+            <div id="SignOut">
+                <button onclick="signOut()">로그아웃</button>
+            </div>
+            <div id="sign_up">
+            </div>
+            <div id="search_Box">
+                <div id="icon"><i class="fas fa-search"></i></div>
+                <input id="search" type="text" value="">
+            </div>
+        </div>
+        <div id="advertise">
+            <a href="https://tanger2ne.kmuwink.com/" target="_blank">
+                <img src="image/song.jpg" class="adimg">
+            </a>
+            <a href="https://jjutopia.kmuwink.com/" target="_blank">
+                <img src="image/zzootopia.png" class="adimg">
+            </a>
+            <a href="https://wwjdtm.kmuwink.com/" target="_blank">
+                <img src="image/milk.jpg" class="adimg">
+            </a>
+        </div>
 
-        </aside>
-    </div>
-    <footer onclick="isLogin()">
-        <div>copyright by HYUNMIN</div>
-    </footer>
+    </aside>
+</div>
+<footer onclick="isLogin()">
+    <div>copyright by HYUNMIN</div>
+</footer>
 </body>
-<script>
-    let isLogin = function (){
-        let user = firebase.auth().currentUser;
-        if(user){
-            document.getElementById('SignInForm').style.height = '0px';
-            document.getElementById('forgot').style.height = '0px';
-            document.getElementById('SignedForm').style.height = '70px';
-            document.getElementById('SignOut').style.height = '150px';
-        }
-    }
-
-    checkLogin(isLogin);
-</script>
 </html>

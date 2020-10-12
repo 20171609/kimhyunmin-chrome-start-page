@@ -384,6 +384,12 @@ aside form label input{
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #000000;
 }
 
+.adimg{
+    width: 240px;
+    height: 100px;
+    margin: 0 0 30px 0;
+}
+
 a{
     text-decoration: none;
 }

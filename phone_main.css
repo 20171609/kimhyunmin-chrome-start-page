@@ -375,7 +375,7 @@ aside form label input{
 
 #advertise{
     height: 382px;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #000000;
+    background: white;
 }
 
 .adimg{

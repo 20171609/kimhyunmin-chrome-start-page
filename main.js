@@ -92,16 +92,18 @@ function signOut() {
 function checkLogin(){
     let user = firebase.auth().currentUser;
     if(user){
+        document.getElementById('sign_up').style.height = '0';
         document.getElementById('SignInForm').style.height = '0px';
         document.getElementById('forgot').style.height = '0px';
         document.getElementById('SignedForm').style.height = '70px';
         document.getElementById('SignOut').style.height = '150px';
     }
     else{
-        document.getElementById('SignInForm').style.height = '70px';
-        document.getElementById('forgot').style.height = '150px';
-        document.getElementById('SignedForm').style.height = '0';
-        document.getElementById('SignOut').style.height = '0';
+        document.getElementById('sign_up').style.height = '55px';
+        document.getElementById('SignInForm').style.height = '0px';
+        document.getElementById('forgot').style.height = '0px';
+        document.getElementById('SignedForm').style.height = '70px';
+        document.getElementById('SignOut').style.height = '150px';
     }
 }
 

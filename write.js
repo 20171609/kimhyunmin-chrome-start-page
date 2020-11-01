@@ -17,7 +17,9 @@ function resister(){
     let name = document.getElementById('name').value;
     let content = document.getElementById('contents').value;
 
-    writePost(title, name, content)
+    writePost(title, name, content);
+
+    alert("작성 완료 되었다능!!!");
 
     document.getElementById('title').value = "";
     document.getElementById('name').value = "";

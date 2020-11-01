@@ -1,0 +1,470 @@
+@font-face {
+    font-family: scared;
+    src: url(font/PantonRustHeavy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: hand_write;
+    src: url(font/PantonRustScrSmBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: scared_m;
+    src: url(font/PantonHeavyMac.otf) format('truetype');
+}
+
+@font-face {
+    font-family: hand_write_m;
+    src: url(font/PantonBoldMac.otf) format('truetype');
+}
+
+.hand{
+    font-family: hand_write, hand_write_m;
+}
+
+body {
+    margin: 0;
+    padding-left: 220px;
+    background-color:black;
+}
+
+header{
+    background-image: url("image/darkrain.jpg");
+    width: 1440px;
+    height: 154px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header p{
+    color: #FF0000;
+    font-family: scared, scared_m, serif;
+
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+
+header p a{
+    text-decoration: none;
+    color: #FF0000;
+}
+
+header span{
+    display: none;
+}
+
+header div{
+    display: none;
+}
+
+#nav_main_aside{
+    width: 1440px;
+    height: 782px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav{
+    width: 208px;
+    height: 782px;
+    background-color:black;
+    color: red;
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav span{
+    display: none;
+}
+
+nav div{
+    width: 208px;
+
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#nav_second{
+    margin-top: 155px;
+}
+
+#watch_out{
+    position: absolute;
+    width: 300px;
+    height: 61px;
+    left: 1160px;
+    top: 852px;
+
+    font-size: 50px;
+    line-height: 59px;
+
+    color: #930000;
+}
+
+nav div p{
+    margin-left: 11px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+nav div ul{
+    padding-left: 0;
+
+    margin: 0;
+    width: 208px;
+    height: 160px;
+    color: #D03D3D;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav div ul li{
+    padding-left: 35px;
+}
+
+nav div ul li:hover{
+    background-color:#BA0000;
+    transition: 1s;
+}
+
+.menu{
+    width: 208px;
+    height: 40px;
+    text-decoration: none;
+    color: red;
+
+    display: flex;
+    align-items: center;
+}
+
+.menu:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 1s;
+}
+
+main{
+    background-image: url("image/darkrain.jpg");
+    background-size: 1024px 782px;
+    width:1024px;
+    height:782px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    width: 80%;
+}
+
+#board{
+    font-family: hand_write, hand_write_m, serif;
+    color: red;
+    width: 100%;
+}
+
+thead{
+    border-bottom: 1px solid gray;
+
+}
+
+tr{
+    display: flex;
+    width: 100%;
+    font-size: 30px;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+}
+
+th{
+    margin: 30px;
+
+}
+
+aside{
+    width: 208px;
+    background-color:black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+aisde div{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+.noComputer{
+    display: none;
+}
+
+aside span{
+    display: none;
+}
+
+aside form{
+    color: red;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside form label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+}
+
+aside form label input{
+    height: 23px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+#sign_in{
+    height: 55px;
+    width: 44px;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FF0000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+    margin-left: 10px;
+    margin-top: 5px;
+    border: none;
+    overflow-x: hidden;
+}
+
+#SignedForm{
+    font-family: hand_write, hand_write_m, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    width: 100%;
+    height: 382px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    overflow-x : hidden;
+}
+
+#write{
+    font-family: hand_write, hand_write_m, serif;
+    background: black;
+    color: red;
+    height: 30px;
+    width: 250px;
+}
+
+#hello{
+    color: red;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+#SignOut{
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x : hidden;
+}
+
+#SignInForm{
+    display: flex;
+    margin: 34px 0 0 7px;
+    height: 70px;
+    overflow-x : hidden;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#forgot{
+    width: 100%;
+    height: 150px;
+    overflow-x : hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#forgot a{
+    color: red;
+    background: black;
+    text-decoration: underline;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#search_Box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#icon{
+    color: red;
+    width: 70px;
+    height: 70px;
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+}
+
+#search{
+    width: 163px;
+    height: 29px;
+
+    border-radius: 10px 7px 7px 10px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FF0000;
+
+    border: 1px solid black;
+    box-shadow: gray 1px 1px;
+}
+
+#advertise{
+    height: 382px;
+    background: white;
+}
+
+.adimg{
+    width: 208px;
+    height: 100px;
+    margin: 0 0 30px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    position: absolute;
+    width: 1440px;
+    height: 89px;
+    top: 935px;
+
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+footer div{
+    color: white;
+    margin: 0 10px 10px 0;
+}
+
+#player{
+    display: none;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0,0,0, 0.5);
+}
+
+.modal_content{
+    background: gray;
+    border-radius: 30px;
+    width: 40%;
+    height: 80%;
+    margin-left: 30%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#cancel{
+    position: absolute;
+    margin-left: 40%;
+    background: white;
+    color: black;
+}
+
+#form_title{
+    height: 15%;
+    margin-left: 10%;
+    color: red;
+    font-size: 20px;
+}
+#form_title h3{
+    margin-bottom: 10px;
+}
+#form_title input{
+    width: 90%;
+    height: 30px;
+    border-radius: 7px;
+}
+
+#form_name{
+    height: 15%;
+    margin-left: 10%;
+    color: red;
+    font-size: 20px;
+}
+#form_name h3{
+    margin-bottom: 10px;
+}
+#form_name input{
+    width: 90%;
+    height: 30px;
+    border-radius: 7px;
+}
+
+#form_content{
+    height: 15%;
+    margin-left: 10%;
+    color: red;
+    font-size: 20px;
+}
+#form_content h3{
+    margin-bottom: 10px;
+}
+#contents{
+    width: 90%;
+    height: 300%;
+    border-radius: 7px;
+}
+
+#resister{
+    width: 20%;
+    height: 30%;
+    border-radius: 10px;
+    margin-left: 40%;
+    margin-top: 5%;
+    background: black;
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: hand_write, hand_write_m, serif;
+}

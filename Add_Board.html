@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="OpenSide.js"></script>
+    <link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="computer_Add_Board.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 768px) and (min-width:480px)" href="tablet_main.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 480px)" href="phone_main.css">
+    <title>Add_Board</title>
+</head>
+<body>
+<div class="modal">
+    <div class ="modal_content">
+        <button onclick="hideModal()" id="cancel">X</button>
+        <div id="form_title">
+            <h3>
+                <label>제목</label>
+            </h3>
+            <span class="input_input">
+                <input id="title" type="text" value="" required>
+            </span>
+        </div>
+        <div id="form_name">
+            <h3>
+                <label>작성자</label>
+            </h3>
+            <span class="input_input">
+                <input id="name" type="text" value="" required>
+            </span>
+        </div>
+        <div id="form_content">
+            <h3>
+                <label>내용</label>
+            </h3>
+            <span class="input_input">
+                <textarea type ="text" id="contents" cols="70" rows="25" value="" required>
+                </textarea>
+            </span>
+            <button id="resister">완료!!</button>
+        </div>
+    </div>
+</div>
+<header onclick="playVideo()">
+    <span id="Menu_Button" onclick="openNav()">=</span>
+    <p><a href="https://4444.kmuwink.com/">BEHIND YOU</a></p>
+    <div id="Login_Button" onclick="openAside()"><i class="fas fa-sign-in-alt"></i></div>
+</header>
+<div id="nav_main_aside">
+    <nav id = "Board_List">
+        <div>
+            <p class="hand">Scared Story</p>
+            <ul>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">도시 괴담</a></li>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">인터넷 괴담</a></li>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">귀신 이야기</a></li>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">요괴 이야기</a></li>
+            </ul>
+        </div>
+        <span id = "Nav_Close" onclick="closeNav()">X</span>
+        <div id = "nav_second">
+            <p class="hand">BOARD Anithing</p>
+            <ul>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">자유 게시판</a></li>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">괴담 게시판</a></li>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">이야기 후기</a></li>
+                <li><a href="https://20171609.github.io/kimhyunmin-chrome-start-page/Behind_You_List.html" class="menu">?????????</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main onclick="playVideo()">
+        <section>
+            <table id="board">
+                <thead>
+                <tr>
+                    <th>날짜</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>삭제</th>
+                </tr>
+                </thead>
+                <tbody id="content">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <aside id="Login_Form">
+        <div id="SignedForm">
+            <p id="hello">안녕!</p>
+            <button id="write" onclick="showModal()">글 쓰고 싶어?</button>
+        </div>
+        <div id="advertise">
+            <a href="https://tanger2ne.kmuwink.com/" target="_blank">
+                <img src="image/song.jpg" class="adimg">
+            </a>
+            <a href="https://jjutopia.kmuwink.com/" target="_blank">
+                <img src="image/zzootopia.png" class="adimg">
+            </a>
+            <a href="https://wwjdtm.kmuwink.com/" target="_blank">
+                <img src="image/milk.jpg" class="adimg">
+            </a>
+        </div>
+
+    </aside>
+</div>
+
+<footer onclick="stopVideo()">
+    <div>copyright by HYUNMIN</div>
+    <div id="player"></div>
+</footer>
+<script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    let tag = document.createElement('script');
+
+    tag.src = 'https://www.youtube.com/iframe_api';
+    let firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    let player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            videoId: 'h1Hb9yElwX4',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange,
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.setVolume(7);
+        event.target.playVideo();
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = false;
+    function onPlayerStateChange(event) {
+        if (event.data === YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000000);
+            done = true;
+        }
+    }
+    function playVideo(){
+        player.playVideo();
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+</script>
+<script>
+    let modal = document.querySelector('.modal');
+
+    function showModal(){
+        modal.style.display='block';
+    }
+
+    function hideModal(){
+        modal.style.display='none';
+    }
+
+</script>
+</body>
+</html>

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+    <script src="firebases/init.js"></script>
     <script src="main.js"></script>
+    <script src="write.js"></script>
     <script type="text/javascript" src="OpenSide.js"></script>
     <link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="computer_Add_Board.css">
     <link rel="stylesheet" type="text/css" media="(max-width: 768px) and (min-width:480px)" href="tablet_main.css">
@@ -37,10 +39,10 @@
                 <label>내용</label>
             </h3>
             <span class="input_input">
-                <textarea type ="text" id="contents" cols="70" rows="25" value="" required>
+                <textarea id="contents" type ="text" cols="70" rows="25" value="" required>
                 </textarea>
             </span>
-            <button id="resister">완료!!</button>
+            <button id="resister" onclick="resister()">완료!!</button>
         </div>
     </div>
 </div>

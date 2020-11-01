@@ -1,5 +1,5 @@
 // Your web app's Firebase configuration
-var config = {
+const config = {
     apiKey: "AIzaSyCbuzLO8sLBkf6n3ahPag9Xk3k_eguACwg",
     authDomain: "chrome-behind-you.firebaseapp.com",
     databaseURL: "https://chrome-behind-you.firebaseio.com",

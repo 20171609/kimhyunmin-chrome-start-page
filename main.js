@@ -1,6 +1,6 @@
-$(document).ready(function() {
-    $("#error").hide();
-});
+// $(document).ready(function() {
+//     $("#error").hide();
+// });
 
 function remainSignIn(){
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)

@@ -342,6 +342,10 @@ aside form label input{
     font-size: 50px;
 }
 
+#hello a{
+    color: red;
+}
+
 #SignOut{
     height: 0;
     display: flex;

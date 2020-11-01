@@ -9,7 +9,7 @@ function writePost(title, username, content){
         username,
     };
 
-    firebase.database().ref.child('posts').push(postData);
+    firebase.database().ref().child('posts').push(postData);
 }
 
 function resister(){

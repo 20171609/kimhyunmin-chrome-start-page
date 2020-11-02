@@ -14,10 +14,10 @@
     <link rel="stylesheet" type="text/css" media="(max-width: 480px)" href="phone_main.css">
     <title>Add_Board</title>
 </head>
-<body>
+<body onload="showTitle()">
 <div class="modal">
     <div class ="modal_content">
-        <button onclick="hideModal()" id="cancel">X</button>
+        <button onclick="hideModal()" class="cancel">X</button>
         <div id="form_title">
             <h3>
                 <label>제목</label>
@@ -43,6 +43,23 @@
                 </textarea>
             </span>
             <button id="resister" onclick="resister()">완료!!</button>
+        </div>
+    </div>
+</div>
+<div class="modal2">
+    <div class ="modal_content2">
+        <button onclick="hideModal()" class="cancel">X</button>
+        <div id="modal_title">
+            <h3 class="modal_h3">제목</h3>
+            <div id="need_title"></div>
+        </div>
+        <div id="modal_name">
+            <h3 class="modal_h3">작성자</h3>
+            <div id="need_name"></div>
+        </div>
+        <div id="modal_nayoung">
+            <h3 class="modal_h3">내용</h3>
+            <div id="need_content"></div>
         </div>
     </div>
 </div>
@@ -78,10 +95,9 @@
             <table id="board">
                 <thead>
                 <tr>
-                    <th>날짜</th>
-                    <th>제목</th>
-                    <th>작성자</th>
-                    <th>삭제</th>
+                    <th class="date">날짜</th>
+                    <th class="title">제목</th>
+                    <th class="who">작성자</th>
                 </tr>
                 </thead>
                 <tbody id="content">
@@ -157,6 +173,10 @@
 </script>
 <script>
     let modal = document.querySelector('.modal');
+    let modal2 = document.querySelector('.modal2');
+    let title = document.querySelector('#need_title');
+    let name = document.querySelector('#need_name');
+    let content = document.querySelector('#need_content');
 
     function showModal(){
         modal.style.display='block';
@@ -164,8 +184,11 @@
 
     function hideModal(){
         modal.style.display='none';
+        modal2.style.display='none';
+        title.innerText = "";
+        name.innerText = "";
+        content.innerText = "";
     }
-
 </script>
 </body>
 </html>

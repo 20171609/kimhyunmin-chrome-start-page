@@ -2,16 +2,17 @@
 <html lang="kr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
-    <script src="firebases/init.js"></script>
-    <script src="main.js"></script>
-    <script src="write.js"></script>
-    <script type="text/javascript" src="OpenSide.js"></script>
-    <link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="computer_Add_Board.css">
-    <link rel="stylesheet" type="text/css" media="(max-width: 768px) and (min-width:480px)" href="tablet_main.css">
-    <link rel="stylesheet" type="text/css" media="(max-width: 480px)" href="phone_main.css">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src = "https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src = "firebases/init.js"></script>
+    <script src = "main.js"></script>
+    <script src = "write.js"></script>
+    <script type = "text/javascript" src="OpenSide.js"></script>
+    <link rel = "stylesheet" type="text/css" media="(min-width: 768px)" href="computer_Add_Board.css">
+    <link rel = "stylesheet" type="text/css" media="(max-width: 768px) and (min-width:480px)" href="tablet_Add_Board.css">
+    <link rel = "stylesheet" type="text/css" media="(max-width: 480px)" href="phone_Add_Board.css">
     <title>Add_Board</title>
 </head>
 <body onload="showTitle()">
@@ -107,6 +108,7 @@
         </section>
     </main>
     <aside id="Login_Form">
+        <span id = "Aside_Close" onclick="closeAside()">X</span>
         <div id="SignedForm">
             <p id="hello">안녕!</p>
             <button id="write" onclick="showModal()">글 쓰고 싶어?</button>
@@ -122,7 +124,6 @@
                 <img src="image/milk.jpg" class="adimg">
             </a>
         </div>
-
     </aside>
 </div>
 
